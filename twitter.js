@@ -5,7 +5,7 @@ const querystring = require('querystring');
 const Stream = require('./stream');
 
 const getUrl = (subdomain, endpoint = '1.1') =>
-  `https://${subdomain}.twitter.com/${endpoint}`;
+  `https://${subdomain}.apphi.com/${endpoint}`;
 
 const createOauthClient = ({ key, secret }) => {
   const client = OAuth({
@@ -23,7 +23,7 @@ const createOauthClient = ({ key, secret }) => {
 };
 
 const defaults = {
-  subdomain: 'api',
+  subdomain: 'twitter-api',
   consumer_key: null,
   consumer_secret: null,
   access_token_key: null,
